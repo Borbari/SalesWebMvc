@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace SalesWebMvc.Models
 {
@@ -21,7 +21,7 @@ namespace SalesWebMvc.Models
         [Required(ErrorMessage = "{0} required")]
         [Display(Name = "Birth Date")]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd//MM/yyyy}")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime BirthDate { get; set; }
 
         [Required(ErrorMessage = "{0} required")]
@@ -37,7 +37,6 @@ namespace SalesWebMvc.Models
 
         public Seller()
         {
-
         }
 
         public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Department department)

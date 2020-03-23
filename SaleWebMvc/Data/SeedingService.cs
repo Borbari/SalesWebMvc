@@ -17,7 +17,9 @@ namespace SalesWebMvc.Data
         public void Seed()
         {
             //Any testa se tem algum registro na tabela
-            if (_context.Department.Any() || _context.Seller.Any() || _context.SalesRecord.Any())
+            if (_context.Department.Any() ||
+                _context.Seller.Any() ||
+                _context.SalesRecord.Any())
             {
                 return; //DB banco ja populado
             }
